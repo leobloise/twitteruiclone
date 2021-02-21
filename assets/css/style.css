@@ -1,0 +1,17 @@
+:root {
+    font-size: 62.5%;
+    --main-color: #00aced;
+    --main-color-lighter: #82d6f8;
+    --main-color-darker: #048cc4;
+    --main-text-color: #323232;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: .5fr 1fr .5fr;
+    grid-template-areas: 
+        "header content news"
+    ;
+}
