@@ -4,12 +4,23 @@
     justify-content: space-between;
     grid-area: header;
     grid-column: 1 / 1;
-    margin-left: 8rem;
 }
 
 .twitter__header__logo img{
-    width: 10%;
+    max-width: 50px;
+}
+
+.twitter__header__logo div  {
+    display: inline-block;
     margin-top: 3rem;
+    padding: var(--circle-size);
+    margin: 3rem 0 0 calc(-1 * var(--circle-size));
+    border-radius: 100%;
+    transition: background .1s;
+}
+
+.twitter__header__logo div:hover  {
+    background: var(--main-color-lighter);
 }
 
 .twitter__header__menu {
@@ -34,6 +45,15 @@
     text-decoration: none;
     font-size: 2.3rem;
     font-weight: bold;
+    cursor: pointer;
+}
+
+.twitter__header__menu__item a:hover {
+    background: var(--main-color-lighter);
+    padding: var(--circle-size);
+    margin: 0 0 0 calc(-1 * var(--circle-size));
+    border-radius: 40px;
+    
 }
 
 .twitter__header__menu__tweet_button {
@@ -48,6 +68,12 @@
     font-family: inherit;
     font-weight: 500;
     font-size: 1.5rem;
+    transition: background .1s;
+    cursor: pointer;
+}
+
+.twitter__header__menu__tweet_button:hover {
+    background: var(--main-color-darker);
 }
 
 .twitter__header__user_info {
@@ -57,12 +83,28 @@
 }
 
 .twitter__header__user_info__photo {
-    max-width: 10%;
+    max-width: 60px;
     margin-right: 1rem;
 }
 
 .twitter__header__user_info__dogtag {
     display: flex;
     flex-direction: column;
-    margin-right: auto
+    margin-right: auto;
+    font-size: 1.4rem;
+}
+
+.twitter__header__user_info__dogtag span:first-child {
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 0 0 .5rem 0;
+}
+
+.twitter__header__user_info__dogtag span:nth-child(2) {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.twitter__header__user_info__more {
+    margin-right: 1rem;
+    font-size: 3rem;
 }
