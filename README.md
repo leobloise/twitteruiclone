@@ -3,6 +3,8 @@
 Inspirado pela rocketseat, decidi construir e treinar minhas habilidades de HTML e CSS construindo algumas interfaces. Nesse caso, a escolhida da vez foi o twitter.
 Ela foi escolhida, pois é uma interface que possui diversos elementos e me possibilita trabalhar bastante com responsividade, grid e flex-box.
 
+__O INTUITO DESSA UI NÃO É SUBSTITUIR O TWITTER COMERCIALMENTE.__ 
+
 # Tecnologias Utilizadas:
 
 * __HTML5__ - _Tags semânticas_.
